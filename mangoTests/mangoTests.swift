@@ -8,29 +8,27 @@
 import XCTest
 @testable import mango
 
-final class mangoTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+final class MangoTests: XCTestCase {
+    func testBasic() throws {
+        let deps = [
+            "A B",
+            "B C",
+            "C A"
+        ]
+        
+        let edgeAB = Edge(origin: Vertex(classLetter: "A"), dest: Vertex(classLetter: "B"))
+        let edgeBC = Edge(origin: Vertex(classLetter: "B"), dest: Vertex(classLetter: "C"))
+        let edgeCA = Edge(origin: Vertex(classLetter: "C"), dest: Vertex(classLetter: "A"))
+        
+        var graph = Graph(root: "A")
+        graph.addVertex("A")
+        graph.addVertex("B")
+        graph.addVertex("C")
+        graph.addEdge(edgeAB)
+        graph.addEdge(edgeBC)
+        graph.addEdge(edgeCA)
+        
+        
+        XCTAssertEqual(mangoTest(deps: deps)!.printAdjDict(), graph.printAdjDict())
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

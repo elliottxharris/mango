@@ -14,19 +14,12 @@
 		343245BC29B58C3000D25175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343245BB29B58C3000D25175 /* Assets.xcassets */; };
 		343245BF29B58C3000D25175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343245BD29B58C3000D25175 /* LaunchScreen.storyboard */; };
 		343245CA29B58C3000D25175 /* mangoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343245C929B58C3000D25175 /* mangoTests.swift */; };
-		343245D429B58C3000D25175 /* mangoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343245D329B58C3000D25175 /* mangoUITests.swift */; };
-		343245D629B58C3000D25175 /* mangoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343245D529B58C3000D25175 /* mangoUITestsLaunchTests.swift */; };
+		343245E629B58CFC00D25175 /* Mango_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343245E429B58CFC00D25175 /* Mango_Test.swift */; };
+		343245E729B58CFC00D25175 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343245E529B58CFC00D25175 /* Graph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		343245C629B58C3000D25175 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 343245A729B58C2E00D25175 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 343245AE29B58C2E00D25175;
-			remoteInfo = mango;
-		};
-		343245D029B58C3000D25175 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 343245A729B58C2E00D25175 /* Project object */;
 			proxyType = 1;
@@ -46,9 +39,8 @@
 		343245C029B58C3000D25175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		343245C529B58C3000D25175 /* mangoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mangoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		343245C929B58C3000D25175 /* mangoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mangoTests.swift; sourceTree = "<group>"; };
-		343245CF29B58C3000D25175 /* mangoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mangoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		343245D329B58C3000D25175 /* mangoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mangoUITests.swift; sourceTree = "<group>"; };
-		343245D529B58C3000D25175 /* mangoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mangoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		343245E429B58CFC00D25175 /* Mango_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mango_Test.swift; sourceTree = "<group>"; };
+		343245E529B58CFC00D25175 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +58,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		343245CC29B58C3000D25175 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +66,6 @@
 			children = (
 				343245B129B58C2E00D25175 /* mango */,
 				343245C829B58C3000D25175 /* mangoTests */,
-				343245D229B58C3000D25175 /* mangoUITests */,
 				343245B029B58C2E00D25175 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +75,6 @@
 			children = (
 				343245AF29B58C2E00D25175 /* mango.app */,
 				343245C529B58C3000D25175 /* mangoTests.xctest */,
-				343245CF29B58C3000D25175 /* mangoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +84,8 @@
 			children = (
 				343245B229B58C2E00D25175 /* AppDelegate.swift */,
 				343245B429B58C2E00D25175 /* SceneDelegate.swift */,
+				343245E529B58CFC00D25175 /* Graph.swift */,
+				343245E429B58CFC00D25175 /* Mango_Test.swift */,
 				343245B629B58C2E00D25175 /* ViewController.swift */,
 				343245B829B58C2E00D25175 /* Main.storyboard */,
 				343245BB29B58C3000D25175 /* Assets.xcassets */,
@@ -116,15 +101,6 @@
 				343245C929B58C3000D25175 /* mangoTests.swift */,
 			);
 			path = mangoTests;
-			sourceTree = "<group>";
-		};
-		343245D229B58C3000D25175 /* mangoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				343245D329B58C3000D25175 /* mangoUITests.swift */,
-				343245D529B58C3000D25175 /* mangoUITestsLaunchTests.swift */,
-			);
-			path = mangoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +141,6 @@
 			productReference = 343245C529B58C3000D25175 /* mangoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		343245CE29B58C3000D25175 /* mangoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 343245DF29B58C3000D25175 /* Build configuration list for PBXNativeTarget "mangoUITests" */;
-			buildPhases = (
-				343245CB29B58C3000D25175 /* Sources */,
-				343245CC29B58C3000D25175 /* Frameworks */,
-				343245CD29B58C3000D25175 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				343245D129B58C3000D25175 /* PBXTargetDependency */,
-			);
-			name = mangoUITests;
-			productName = mangoUITests;
-			productReference = 343245CF29B58C3000D25175 /* mangoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +155,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					343245C429B58C3000D25175 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 343245AE29B58C2E00D25175;
-					};
-					343245CE29B58C3000D25175 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 343245AE29B58C2E00D25175;
 					};
@@ -221,7 +175,6 @@
 			targets = (
 				343245AE29B58C2E00D25175 /* mango */,
 				343245C429B58C3000D25175 /* mangoTests */,
-				343245CE29B58C3000D25175 /* mangoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,13 +197,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		343245CD29B58C3000D25175 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,9 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343245E629B58CFC00D25175 /* Mango_Test.swift in Sources */,
 				343245B729B58C2E00D25175 /* ViewController.swift in Sources */,
 				343245B329B58C2E00D25175 /* AppDelegate.swift in Sources */,
 				343245B529B58C2E00D25175 /* SceneDelegate.swift in Sources */,
+				343245E729B58CFC00D25175 /* Graph.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,15 +220,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		343245CB29B58C3000D25175 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				343245D429B58C3000D25175 /* mangoUITests.swift in Sources */,
-				343245D629B58C3000D25175 /* mangoUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +227,6 @@
 			isa = PBXTargetDependency;
 			target = 343245AE29B58C2E00D25175 /* mango */;
 			targetProxy = 343245C629B58C3000D25175 /* PBXContainerItemProxy */;
-		};
-		343245D129B58C3000D25175 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 343245AE29B58C2E00D25175 /* mango */;
-			targetProxy = 343245D029B58C3000D25175 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -522,40 +456,6 @@
 			};
 			name = Release;
 		};
-		343245E029B58C3000D25175 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elliottxharris.mangoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = mango;
-			};
-			name = Debug;
-		};
-		343245E129B58C3000D25175 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elliottxharris.mangoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = mango;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,15 +482,6 @@
 			buildConfigurations = (
 				343245DD29B58C3000D25175 /* Debug */,
 				343245DE29B58C3000D25175 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		343245DF29B58C3000D25175 /* Build configuration list for PBXNativeTarget "mangoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				343245E029B58C3000D25175 /* Debug */,
-				343245E129B58C3000D25175 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
